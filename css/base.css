@@ -1,0 +1,82 @@
+/* Base Styles */
+body {
+    font-family: var(--font-primary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), transparent), url('../assets/images/pexels-anna-shvets-3962294.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    min-height: 100vh;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Typography */
+.main-title {
+    font-family: var(--font-decorative);
+    font-size: var(--font-size-5xl);
+    color: var(--text-light);
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.subtitle {
+    font-family: var(--font-decorative);
+    font-size: var(--font-size-2xl);
+    color: var(--accent-color);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.content-text {
+    color: var(--text-light);
+    text-align: center;
+    font-size: var(--font-size-lg);
+    text-shadow: var(--text-shadow);
+}
+
+/* Layout Containers */
+.content-container {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section {
+    margin-top: var(--spacing-3xl);
+}

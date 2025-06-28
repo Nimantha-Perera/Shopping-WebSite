@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits & Vegetables - Online Store</title>
+    
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check">
+            <i class="bi bi-list" id="menu-icon"></i>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link active" data-tab="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-tab="register">Create Account</a></li>
+            <li><a href="#" class="nav-link" data-tab="shopping">Shopping</a></li>
+            <li><a href="#" class="nav-link" data-tab="about">About</a></li>
+            <li><a href="#" class="nav-link" data-tab="cart">Add to Cart <i class="bi bi-cart4"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="hero-section">
+                <h1 class="main-title">Fresh fruits and vegetables</h1>
+                <h2 class="subtitle">Create Account & Shopping Now</h2>
+                <div class="cta-section">
+                    <button class="btn btn-primary" data-target="register">
+                        Create Account <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="tab-content">
+            <div class="form-container">
+                <h1 class="main-title">Register & Login</h1>
+                <div class="form-wrapper">
+                    <form class="registration-form" method="post" action="php/register.php">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Enter full name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Password" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="repass" placeholder="Re-Enter Password" required class="form-input">
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-full">Register</button>
+                        <div class="form-footer">
+                            <p class="form-text">Already have an account? <a href="#" class="form-link">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Section -->
+        <section id="shopping" class="tab-content">
+            <div class="content-container">
+                <h1 class="main-title">Shopping</h1>
+                <p class="content-text">Browse our fresh selection of fruits and vegetables.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="tab-content">
+            <div class="content-container">
+                <h1 class="main-title">About Us</h1>
+                <p class="content-text">Learn more about our commitment to fresh, quality produce.</p>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="tab-content">
+            <div class="content-container">
+                <h1 class="main-title">Shopping Cart</h1>
+                <p class="content-text">Your cart is currently empty.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">COMPANY</h4>
+                <hr class="footer-divider">
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">ONLINE SHOP</h4>
+                <hr class="footer-divider">
+                <ul class="footer-links">
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Groceries</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">GET HELP</h4>
+                <hr class="footer-divider">
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">SOCIAL</h4>
+                <hr class="footer-divider">
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Copyright: <a href="#">www.dmart.lk</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
